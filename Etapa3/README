@@ -1,0 +1,25 @@
+Proiect PA - 2021 - Seria CA
+
+Etapa 2
+
+Nume echipa: CiucasLa2Jumate
+Membrii:
+	- Iordache Matei Cezar - 325CA - matei.iordache
+    - Siminica Andrei Razvan - 321CA - andrei.siminica
+    - Petrescu Robert-Mihai - 323CA - robert.petrescu
+    - Ganesanu Gigi-Florin - 324CA - gigi.ganesanu
+
+Pentru aceasta etapa au fost implementate toate mutarile posibile admise, mai exact mutarea fiecarei piese, precum si
+detalii extra, cum ar fi cele 2 tipuri de rocade, evolutia unui pion in cazul in care parcurge intreaga lungime a tablei, samd.
+
+
+Detalii implementare si algoritm folosit:
+	- au fost folosite diferite lucruri pentru optimizare(ex.: bitboard - pentru a stoca eficient detaliile si continutul tablei)
+	- folosirea algoritmului NegaMax (https://en.wikipedia.org/wiki/Negamax | https://www.chessprogramming.org/Negamax)
+	- DFS(Iterative Deepening - https://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search 
+								| https://www.chessprogramming.org/Iterative_Deepening)
+	- foloseste un set de miscari de start (Book)
+	- Quiescence search (https://en.wikipedia.org/wiki/Quiescence_search)
+	- Bitboard (https://en.wikipedia.org/wiki/Bitboard 
+			   | https://www.chessprogramming.org/Bitboards)
+

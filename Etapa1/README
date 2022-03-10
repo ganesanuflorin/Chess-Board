@@ -1,0 +1,40 @@
+Proiect PA - 2021 - Seria CA
+
+Etapa 1
+
+Nume echipa: CiucasLa2Jumate
+Membrii:
+	- Iordache Matei Cezar - 325CA - matei.iordache
+    - Siminica Andrei Razvan - 321CA - andrei.siminica
+    - Petrescu Robert-Mihai - 323CA - robert.petrescu
+    - Ganesanu Gigi-Florin - 324CA - gigi.ganesanu
+
+Pentru prima etapa a fost implementata mutarea unui singur pion.
+
+Au fost implementate urmatoarele functii:
+	- initialize_board() -> initializeaza tabla (pune piesele pe tabla la locul lor)
+	- new_game() -> incepe un joc nou; selecteaza pionul negru si pionul alb ce urmeaza a fi mutai de bot (dupa caz)
+	- force(command) -> Opreste bot-ul din a juca. Face ca meciul sa continue intre 2 jucatori, ambele culori fiind mutate
+	                 din mouse.
+	- pawn_move(color) -> executa miscarea pionului alb/negru (dupa caz)
+					   -> muta pionul inainte cu o casuta
+					   -> in cazul in care nu este posibila mutarea standard, va incerca sa atace
+					   -> verifica daca are posibilitatea de a ataca
+					   -> In cazul in care atacul este posibil in ambele parti, pionul negru va ataca
+					   prima data pe partea dreapta, in schimb ce pionul alb va prioritiza partea stanga
+					   -> in cazul in care pionul a fost scos/a ajuns la capatul tablei/nu mai are unde
+					   sa se mute (este blocat in fata si nu are pe cine sa atace), jocul se va termina
+	- move_legal() -> verifica daca mutarea respecta regulile jocului
+
+In main au fost apelate functiile corespunzatoare, astfel:
+	- incepe prin a initializa tabla de joc
+	- a fost folosita o bucla infinita (while(1)) pentru a prelua comenzi pana in momentul in care jocul este oprit manual
+	- in cadrul buclei sunt facute verificarile pentru toate comenzile prezente in XBoard.
+
+In cadrul header-ului 'utils.h' a fost creata clasa Piece, ce contine:
+	- pozitia initiala a piesei (row, column)
+	- tipul piesei (ex.: WHITE_PAWN -> pion alb)
+
+De asemenea, au fost adaugate si 2 functii:
+	- is_valid_command(command) -> Verifica daca comanda data este valida pentru comanda 'force'
+	- is_legal_move(move) -> verifica daca locul in care este mutata piesa se afla in interiorul tablei de joc

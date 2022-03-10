@@ -1,0 +1,52 @@
+locale = LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ro_RO.UTF-8;LC_TIME=ro_RO.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=ro_RO.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ro_RO.UTF-8;LC_NAME=ro_RO.UTF-8;LC_ADDRESS=ro_RO.UTF-8;LC_TELEPHONE=ro_RO.UTF-8;LC_MEASUREMENT=ro_RO.UTF-8;LC_IDENTIFICATION=ro_RO.UTF-8
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+shuffleOpenings = 0
+Version: xboard 4.9.1 + xboard ()
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir="/home/razvan/XBoard-Chess-Engine-master") ./xboard
+107 >first : xboard
+protover 2
+110 <first : 10129 >first : new
+random
+10129 >first : level 40 5 0
+10129 >first : post
+10129 >first : hard
+GameEnds(29, xboard exit, 2)
+16349 >first : result * {xboard exit}
+16349 >first : force
+16349 >first : quit
+: new
+random
+112 >first : level 40 5 0
+112 >first : post
+112 >first : hard
+nps: w=-1, b=-1
+nps: w=-1, b=-1
+4624 >first : time 30000
+4624 >first : otim 30000
+book hit = (NULL)
+4624 >first : usermove 4624 >first : b4
+4697 <first : move c6
+Interrupting first
+6586 >first : time 29992
+6586 >first : otim 29811
+book hit = (NULL)
+6586 >first : usermove 6586 >first : c3
+6693 <first : move g6
+Interrupting first
+13117 >first : time 29982
+13117 >first : otim 29168
+book hit = (NULL)
+13117 >first : usermove 13117 >first : Na3
+13231 <first : move Nf6
+GameEnds(29, xboard exit, 2)
+Interrupting first
+15378 >first : result * {xboard exit}
+15378 >first : force
+15378 >first : quit
